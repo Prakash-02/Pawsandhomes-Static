@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Paws&Homes</title>
+    <link rel="icon" href="../images/Appicon.png">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<!----------------------------------------------navbar---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<body>
+     <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a href="../Main_page/main.html" class="navbar-brand">
+                    <img class="d-inline-block align-top" src="../images/Appicon.png" width="30" height="30" alt="Appicon" loading="lazy">Paws & Homes</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavBar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="../Main_page/main.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../About_us/About_us.html" class="nav-link " >About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../find_a_pet/Findapet.html" class="nav-link">Find a pet</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a href="index.html" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu">
+                            <a href="../Book_an_event/Bookanevent.html" class="dropdown-item">Book an Event</a>
+                            <a href="../find_a_pet/Findapet.html" class="dropdown-item">Find a pet</a>
+                            <a href="../Visited_events/visitedevents.html" class="dropdown-item">Visited Events</a>
+                            <a href="../Past_orders/pastorders.html" class="dropdown-item">Past Orders</a>
+                        </div>
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="../Contacts/contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+     </header>
+    <!--------------------------------------------- carousel ---------------------------------------------------->
+    <div class="container my-2">
+        <div id="Petevents" class="carousel slide" data-ride="carousel" >
+            <ul class="carousel-indicators">
+                <li data-target="#Petevents" data-slide-to="0" class="active"></li>
+                <li data-target="#Petevents" data-slide-to="1"></li>
+                <li data-target="#Petevents" data-slide-to="2"></li>
+            </ul>
+    
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="img-fluid" src="../images/carousel/slide1.jpg" alt="event1" >
+                </div>
+                <div class= "carousel-item">
+                    <img class="img-fluid" src="../images/carousel/slide2.jpg" alt="event2" >
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/carousel/slide3.jpg" class="img-fluid" alt="event3" >
+                </div>
+            </div>
+            <a id="cbtn" class="carousel-control-prev" href="#Petevents" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a id="cbtn" class="carousel-control-next" href="#Petevents" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+    <!-- -------------------------------------------------hero------------------------------------------------- -->
+    <!-- <div class="jumbotron jumbotron-fluid" style="background-image: url('../images/adopt_pet.jpg'); background-size: cover; background-position: center; color: white;">
+        <div class="container">
+          <h1 class="display-4">Adopt a Pet</h1>
+          <p class="lead">Give a loving home to a furry friend in need. Your new best friend is waiting for you!</p>
+          <hr class="my-4">
+          <p>Adopting a pet not only changes their life but also brings joy and companionship to yours. Discover pets available for adoption today.</p>
+          <p class="lead">
+            <a class="btn btn-primary btn-lg" href="../find_a_pet/Findapet.html" role="button">Find Your Pet</a>
+          </p>
+        </div>
+      </div> -->
+      <!-- ------------------------------------------------------------------------------------------------ -->
+      <div class="container" id="adoption-rate">
+        <div class="ml-3">
+            <h2>Give a loving home to a furry friend in need</h2>
+            <br><h3>Your new best friend is waiting for you!</h3>
+          <p class="lead">
+            <a class="btn btn-primary btn-lg" href="../find_a_pet/Findapet.html" role="button">Adopt now</a>
+          </p>
+        </div>
+      </div>
+    <!--------------------------------------------------- cards----------------------------------------------->
+    <div class="container my-2">
+        <hr>
+        <h1 style="text-align: center;">Companions to explore!!</h1>
+        <hr>
+        <div class="row">
+            <div class="col-8 col-md-3">
+                <a href="Dogs.html" class="mt-auto">
+                    <div class="card bg-dark text-white mb-4">
+                        <img src="../images/Main_page/features/dog_icon.gif" alt="Adopt-dog" class="card-img">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h3 class="card-title text-dark">Dog</h3>
+                            <!-- <p class="card-text text-dark">Book your next event with us.</p> -->
+        
+                        </div>
+                </a>
+            </div>
+            </div>
+            <div class="col-8 col-md-3">
+                <a href="cats.html" class="mt-auto">
+                    <div class="card bg-dark text-white mb-4">
+                        <img src="../images/Main_page/features/cat_icon.gif" alt="Cat" class="card-img">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h5 class="card-title text-dark">Cats</h5>
+                            <!-- <p class="card-text text-dark">Find your perfect pet companion.</p> -->
+                            
+                        </div>
+                </a>
+                </div>
+            </div>
+            <div class="col-8 col-md-3">
+                <a href="birds.html" class=" mt-auto">
+                    <div class="card bg-dark text-white mb-4">
+                        <img src="../images/Main_page/features/birds.gif" alt="visitedevents" class="card-img">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h5 class="card-title text-dark">Birds</h5>
+                            <!-- <p class="card-text text-dark">Check out the events you've visited.</p> -->
+                        </div>
+                    </div>    
+                </a>
+            </div>
+            <div class="col-8 col-md-3">
+                <a href="../Past_orders/pastorders.html" class="mt-auto">
+                    <div class="card bg-dark text-white mb-4">
+                        <img src="../images/Main_page/features/pastorders.jpg" alt="pastorders" class="card-img">
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                            <h5 class="card-title text-white">Birds</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-2 mb-auto">
+        <div class="container text-center">
+            <p>&copy; 2024 Paws & Homes. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="text-white mx-2">Facebook</a>
+                <a href="#" class="text-white mx-2">Twitter</a>
+                <a href="#" class="text-white mx-2">Instagram</a>
+            </div>
+        </div>
+    </footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../Main_page/main.js"></script>  
+</body>
+</html>

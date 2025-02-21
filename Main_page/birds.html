@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Adopt a Bird</title>
+    <link rel="icon" href="../images/Appicon.png">
+    <link rel="stylesheet" href="birdview.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a href="/" class="navbar-brand">
+                    <img class="d-inline-block align-top" src="../images/Appicon.png" width="30" height="30" alt="Appicon" loading="lazy">Paws & Homes</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavBar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="myNavBar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a href="../Main_page/main.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../About_us/About_us.html" class="nav-link">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../find_a_pet/Findapet.html" class="nav-link">Find a pet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../Contacts/contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero bg-beige text-dark text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Adopt a Bird</h1>
+            <p class="lead">Find your perfect feathered friend.</p>
+        </div>
+    </section>
+
+    <!-- Bird List Section -->
+    <section class="bird-list py-5">
+        <div class="container">
+            <div class="row" id="birdList">
+                <!-- Bird cards will be populated here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Bird Details Modal -->
+    <div class="modal fade" id="birdModal" tabindex="-1" role="dialog" aria-labelledby="birdModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="birdModalLabel">Bird Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="birdModalBody">
+                    <!-- Bird details will be populated here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-warning">Adopt</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mb-auto">
+        <div class="container text-center">
+            <p>&copy; 2024 Paws & Homes. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="text-white mx-2">Facebook</a>
+                <a href="#" class="text-white mx-2">Twitter</a>
+                <a href="#" class="text-white mx-2">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    <script src="birds.js"></script>
+</body>
+</html>

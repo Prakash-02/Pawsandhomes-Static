@@ -1,0 +1,71 @@
+/* Countdown Style */
+.count {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+body{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    /* background-color: bisque; */
+    /* background-image: url('images/Paw_Background_Pattern.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#adoption-rate {
+    background-image: url('images/Main_page/found_homes_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.navbar {
+    position: relative;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+#userNameBtn {
+    margin-right: 10px;
+}
+
+#loginBtn {
+    margin-left: auto;
+}
+
+
+/* style */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #faf0e6);
+}
+nav {
+    background: linear-gradient(to right, #faf0e6, #e0d2b6);
+    padding: 15px;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.content {
+    padding: 20px;
+    text-align: center;
+}
+.content h1 {
+    color: #c3a57d;
+}
+.content p {
+    color: #8b6e4b;
+}
+

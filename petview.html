@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Admin Dashboard - Manage Pets</title>
+    <link rel="icon" href="../images/Appicon.png">
+    <link rel="stylesheet" href="petview.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a href="/" class="navbar-brand">
+                    <img class="d-inline-block align-top" src="../images/Appicon.png" width="30" height="30" alt="Appicon" loading="lazy">Paws & Homes</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavBar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="myNavBar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a href="../Main_page/main.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../About_us/About_us.html" class="nav-link">About us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="index.html" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">Services</a>
+                            <div class="dropdown-menu">
+                                <a href="../Book_an_event/Bookanevent.html" class="dropdown-item">Book an Event</a>
+                                <a href="./find_a_pet/Findapet.html" class="dropdown-item active">Find a pet</a>
+                                <a href="../Visited_events/visitedevents.html" class="dropdown-item">Visited Events</a>
+                                <a href="../Past_orders/pastorders.html" class="dropdown-item">Past Orders</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../Contacts/contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- Uncomment this section if you need login/signup functionality -->
+                    <!-- <a href="../login_signup/login.html" class="ml-auto"><button type="button"  class="btn btn-outline-dark"><i class="fa-solid fa-user mr-3"></i>login</button></a> -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero bg-beige text-dark text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Admin Dashboard</h1>
+            <p class="lead">Manage pets that are looking for their forever homes.</p>
+            <a href="add_pet.html" class="btn btn-outline-warning">Add Pet</a>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="search-filter py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Filters</h5>
+                    <form id="filterForm">
+                        <div class="form-group">
+                            <label for="petType">Type</label>
+                            <select class="form-control" id="petType">
+                                <option>All</option>
+                                <option>Dog</option>
+                                <option>Cat</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="petAge">Age</label>
+                            <select class="form-control" id="petAge">
+                                <option>All</option>
+                                <option>Puppy/Kitten</option>
+                                <option>Young</option>
+                                <option>Adult</option>
+                                <option>Senior</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="petSize">Size</label>
+                            <select class="form-control" id="petSize">
+                                <option>All</option>
+                                <option>Small</option>
+                                <option>Medium</option>
+                                <option>Large</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="petLocation">Location</label>
+                            <input type="text" class="form-control" id="petLocation" placeholder="Enter location">
+                        </div>
+                        <button type="button" class="btn btn-outline-warning" id="filterButton">Apply Filters</button>
+                    </form>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="row" id="petList">
+                        <!-- Pet cards will be populated here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pet Details Modal -->
+    <div class="modal fade" id="petModal" tabindex="-1" role="dialog" aria-labelledby="petModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="petModalLabel">Pet Details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="petModalBody">
+                    <!-- Pet details will be populated here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Close</button>
+                    <a href="update_pet.html">
+                        <button type="button" class="btn btn-outline-warning">Update</button>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mb-auto">
+        <div class="container text-center">
+            <p>&copy; 2024 Paws & Homes. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="text-white mx-2">Facebook</a>
+                <a href="#" class="text-white mx-2">Twitter</a>
+                <a href="#" class="text-white mx-2">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    <script src="petview.js"></script>
+</body>
+</html>

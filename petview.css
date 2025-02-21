@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #faf0e6);
+  }
+  nav {
+    background: linear-gradient(to right, #faf0e6, #e0d2b6);
+    padding: 15px;
+    text-align: center;
+  }
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .content {
+    padding: 20px;
+    text-align: center;
+  }
+  .content h1 {
+    color: #c3a57d;
+  }
+  .content p {
+    color: #8b6e4b;
+  }
+  
+.navbar {
+  position: relative;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+#userNameBtn {
+  margin-right: 10px;
+}
+
+#loginBtn {
+  margin-left: auto;
+}

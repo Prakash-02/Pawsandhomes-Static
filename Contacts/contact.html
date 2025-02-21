@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Paws&Homes</title>
+    <link rel="icon" href="../images/Appicon.png">
+    <link rel="stylesheet" href="contacts.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<!----------------------------------------------navbar---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<body>
+     <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a href="/" class="navbar-brand">
+                    <img class="d-inline-block align-top" src="../images/Appicon.png" width="30" height="30" alt="Appicon" loading="lazy">Paws & Homes</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavBar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="../Main_page/main.html" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../About_us/About_us.html" class="nav-link " >About us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu">
+                            <a href="../Book_an_event/Bookanevent.html" class="dropdown-item">Book an Event</a>
+                            <a href="../find_a_pet/Findapet.html" class="dropdown-item">Find a pet</a>
+                            <a href="../Visited_events/visitedevents.html" class="dropdown-item">Visited Events</a>
+                            <a href="../Past_orders/pastorders.html" class="dropdown-item">Past Orders</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../Contacts/contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <!-- <a href="login_signup/login.html" class="ml-auto"><button type="button"  class="btn btn-outline-dark"><i class="fa-solid fa-user mr-3"></i>login</button></a> -->
+                
+            </div>
+            </div>
+        </nav>
+     </header>
+     <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2 class="text-center mb-4">Contact Us</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 text-center">
+                <h3>Our Location</h3>
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.8354345655355!2d144.9630577!3d-37.8165321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f45f3f11%3A0x5045675218ce7e33!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sin!4v1611817617882!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                <!-- <iframe src="https://maps.app.goo.gl/KrjmEBM4cSgSL2TU9" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30457.394979693756!2d78.29662821083986!3d17.4034175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9500449b2f69%3A0xdab3d09ab0feb1dc!2sCognizant%20office%20GAR%20Infobion%20tower%205!5e0!3m2!1sen!2sin!4v1735842863958!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <p class="mt-4"><strong>Address:</strong> 123 Pet Street, Petville, PV 12345</p>
+                <p><strong>Phone:</strong> (123) 456-7890</p>
+                <p><strong>Email:</strong> contact@petadoption.com</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mb-auto">
+        <div class="container text-center">
+            <p>&copy; 2025 Paws & Homes. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="text-white mx-2">Facebook</a>
+                <a href="#" class="text-white mx-2">Twitter</a>
+                <a href="#" class="text-white mx-2">Instagram</a>
+            </div>
+        </div>
+    </footer>
+<script src="../Contacts/contacts.js"></script>   
+
+</body>
+</html>
